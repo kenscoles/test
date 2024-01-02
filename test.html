@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>The JavaScript Event Loop</h1>
+
+
+<code>const foo = () => console.log("First");</code><br>
+<code>const bar = () => setTimeout(() => console.log("Second"), 4000);</code><br>
+<code>const bar2 = () => setTimeout(() => console.log("Third"), 2000);</code><br>
+<code>const baz = () => console.log("Fourth");</code><br>
+<br>
+<code>bar();</code><br>
+<code>bar2();</code><br>
+<code>foo();</code><br>
+<code>baz();</code><br>
+
+
+<h2 id="demo"></h2>
+
+<script>
+
+const foo = () => console.log("First");
+const bar =  () => setTimeout(() => console.log("Second"), 4000);
+const bar2 = () => setTimeout(() => console.log("Third"), 2000);
+const baz = () => console.log("Fourth");
+ bar();
+ bar2();
+foo();
+baz();
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.flex-container {
+  /* We first create a flex layout context */
+  display: flex;
+  
+  /* Then we define the flow direction 
+     and if we allow the items to wrap 
+   * Remember this is the same as:
+   * flex-direction: row;
+   * flex-wrap: wrap;
+   */
+  flex-flow: row wrap;
+  
+  /* Then we define how is distributed the remaining space */
+  justify-content: space-around;
+  
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.flex-item {
+  background: tomato;
+  padding: 5px;
+  width: 200px;
+  height: 150px;
+  margin-top: 10px;
+  line-height: 150px;
+  color: gold;
+  font-weight: bold;
+  font-size: 4em;
+  text-align: center;
+}
+@media only screen and (max-width: 1000px) {
+    body {
+      background-color: lightblue;
+    }
+.flex-item {
+  background: blue;
+  padding: 5px;
+  width: 50px;
+  height: 50px;
+  margin-top: 5px;
+  line-height: 50px;
+  color: gold;
+  font-weight: bold;
+  font-size: 2em;
+  text-align: center;
+}
+.flex-container {
+flex-flow: column wrap;
+	}	
+}
+</style>
+<script>
+
+</script>
+
+</head>
+<body>
+
+
+<ul class="flex-container">
+  <li class="flex-item">1</li>
+  <li class="flex-item">2</li>
+  <li class="flex-item">3</li>
+  <li class="flex-item">4</li>
+  <li class="flex-item">5</li>
+  <li class="flex-item">6</li>
+</ul>
+
+
+
+<h2 id="demo"></h2>
+
+
+
+</body>
+</html>
