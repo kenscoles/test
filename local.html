@@ -1,0 +1,14 @@
+<h2>Testing local storage</h2>
+<input id="local-input" onkeydown="store(this)">
+
+<script>
+    // keep the contents of the input in local storage, called by input onkeydown
+    function store(e) {
+        localStorage.setItem('local', e.value)
+    }
+
+    // if previous storage exists, use it
+    if(localStorage.getItem('local') !== null) {
+        document.getElementById('local-input').value = localStorage.getItem('local')
+    }
+</script>
