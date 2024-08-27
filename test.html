@@ -1,40 +1,56 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-</head>    
+</head>
+
 <body>
 
-
-<h1>The JavaScript Event Loop</h1>
-
-
-<code>const foo = () => console.log("First");</code><br>
-<code>const bar = () => setTimeout(() => console.log("Second"), 4000);</code><br>
-<code>const bar2 = () => setTimeout(() => console.log("Third"), 2000);</code><br>
-<code>const baz = () => console.log("Fourth");</code><br>
-<br>
-<code>bar();</code><br>
-<code>bar2();</code><br>
-<code>foo();</code><br>
-<code>baz();</code><br>
+    <a href="index.html">Back to menu</a>
+    <h1>The JavaScript Event Loop</h1>
 
 
-<h2 id="demo"></h2>
+    <code>const foo = () => console.log("First");</code><br>
+    <code>const bar = () => setTimeout(() => console.log("Second"), 4000);</code><br>
+    <code>const bar2 = () => setTimeout(() => console.log("Third"), 2000);</code><br>
+    <code>const baz = () => console.log("Fourth");</code><br>
+    <br>
+    <code>bar();</code><br>
+    <code>bar2();</code><br>
+    <code>foo();</code><br>
+    <code>baz();</code><br>
 
-<script>
 
-const foo = () => console.log("First");
-const bar =  () => setTimeout(() => console.log("Second"), 4000);
-const bar2 = () => setTimeout(() => console.log("Third"), 2000);
-const baz = () => console.log("Fourth");
- bar();
- bar2();
-foo();
-baz();
+    <h2 id="demo">demo</h2>
 
-</script>
+    <script>
+
+        const foo = () => {
+            document.getElementById('demo').innerHTML += "first<br>"
+        }
+
+        const bar = () => {
+            setTimeout(() => document.getElementById('demo').innerHTML += "second<br>", 4000);
+        }
+
+        const bar2 = () => {
+            setTimeout(() => document.getElementById('demo').innerHTML += "third<br>", 2000);
+        }
+
+        const baz = () => {
+            document.getElementById('demo').innerHTML += "fourth<br>"
+        }
+
+        document.getElementById('demo').innerHTML = ""; // clear
+        bar();
+        bar2();
+        foo();
+        baz();
+
+    </script>
 
 </body>
+
 </html>
