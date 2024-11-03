@@ -25,6 +25,7 @@
     100% { transform: rotate(360deg); }
   }
   .container {
+    margin: 0 auto;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -35,7 +36,7 @@
 
   .comp1 {
     background-color: rgb(199, 162, 114);
-    border: 6px solid red;
+    
     width:60%;
     text-align: left;
     text-indent: 10px;
@@ -45,7 +46,7 @@
   }
   .comp2 {
     background-color: lawngreen;
-    border: 6px solid blue;
+    
     width:40%;
     text-align: left;
     text-indent: 10px;
@@ -71,28 +72,11 @@
 <body>
     <div class="container">
         <div class="comp1">
-          <h1>How I feel about Angular</h1>
-          <article>
-            <p class="comment">
-              Angular is my favorite framework, and
-              this is why. Angular has the coolest
-              deferrable view feature that makes defer
-              loading content the easiest and most
-              ergonomic it could possibly be.
-            </p>
-          </article>
+          <h1>This is the controls area</h1>
+          <button>Press</button>
         </div>
         <div class="comp2">
-            <h1>How I feel about Angular</h1>
-            <article>
-              <p class="comment">
-                Angular is my favorite framework, and
-                this is why. Angular has the coolest
-                deferrable view feature that makes defer
-                loading content the easiest and most
-                ergonomic it could possibly be.
-              </p>
-            </article>
-      </div>
+          <h1>This is the play area</h1>
+    </div>
 </body>
 </html>

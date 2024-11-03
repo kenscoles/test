@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<style>
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.child__wrapper {
+  flex: 1 0 26%;
+  margin: 1px;
+  padding: 20px;
+  height: 100px;
+  box-sizing: border-box;
+  background: lightgray;
+}
+.my__wrapper {
+  flex: 1 0 48%;
+  margin: 1px;
+  padding: 20px;
+  height: 200px;
+  box-sizing: border-box;
+  background: lightgray;
+}
+
+@media only screen and (max-width: 600px) {
+.child__wrapper {
+    flex: 1 0 48%;
+    height: 200px;
+}
+.my__wrapper{
+    flex: 1 0 90%;
+}
+}
+
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+</style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="child__wrapper">1</div>
+        <div class="child__wrapper">2
+            <button>Press this</button>
+        </div>
+        <div class="child__wrapper">3
+            Resize the browser window to see how the content responds to the resizing
+        </div>
+        <div class="child__wrapper">4</div>
+        <div class="child__wrapper">5</div>
+        <div class="child__wrapper">6</div>
+        <div class="child__wrapper">7</div>
+        <div class="child__wrapper">8</div>
+        <div class="child__wrapper">9</div>
+      </div>
+
+      <div class="wrapper">
+        <div class="my__wrapper">Hello</div>      
+        <div class="my__wrapper">Hello 2</div>
+      </div>
+</body>
+</html>
