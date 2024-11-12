@@ -20,9 +20,13 @@
   flex: 1 0 48%;
   margin: 1px;
   padding: 20px;
-  height: 200px;
+  min-height: 200px;
   box-sizing: border-box;
-  background: lightgray;
+  background: lightblue;
+}
+.colour {
+background: yellow;
+flex: 1 0 90%;
 }
 
 @media only screen and (max-width: 600px) {
@@ -46,24 +50,28 @@
 </head>
 <body>
     <div class="wrapper">
-        <div class="child__wrapper">1</div>
-        <div class="child__wrapper">2
+        <div class="child__wrapper">This is child wrapper 1</div>
+        <div class="child__wrapper">This is child wrapper 2
             <button>Press this</button>
         </div>
-        <div class="child__wrapper">3
+        <div class="child__wrapper">This is child wrapper 3
             Resize the browser window to see how the content responds to the resizing
         </div>
-        <div class="child__wrapper">4</div>
-        <div class="child__wrapper">5</div>
-        <div class="child__wrapper">6</div>
-        <div class="child__wrapper">7</div>
-        <div class="child__wrapper">8</div>
-        <div class="child__wrapper">9</div>
+        <div class="child__wrapper">This is child wrapper 4</div>
+        <div class="child__wrapper">This is child wrapper 5</div>
+        <div class="child__wrapper">This is child wrapper 6</div>
+        <div class="child__wrapper">This is child wrapper 7</div>
+        <div class="child__wrapper colour">This is child wrapper 8</div>
+        <div class="child__wrapper">This is child wrapper 9</div>
+		<div class="child__wrapper">This is child wrapper 10</div>
       </div>
 
       <div class="wrapper">
-        <div class="my__wrapper">Hello</div>      
-        <div class="my__wrapper">Hello 2</div>
+        <div class="my__wrapper">Hello This is my wrapper 1 
+		<h2>The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. </h2>
+		</div>      
+        <div class="my__wrapper">Hello This is my wrapper 2</div>
+		<div class="my__wrapper">Hello This is my wrapper 3</div>
       </div>
 </body>
 </html>

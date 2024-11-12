@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<title>Containers</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+
+/* Create the container / set the containment context */
+.card-wrapper-container {
+  container-type: inline-size;
+}
+
+/* Define the container query using @container */
+/* The rule below says: find the closest ancestor with a
+ containment context 
+- in this case "card-wrapper-container" -
+and when the width is 560 pixels and above, 
+set the grid columns to 2 */
+@container (min-width: 560px) {
+  .card-wrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .card-title {
+    font-size: 1.5rem;
+  }
+}
+
+</style>
+
+<body>
+
+
+<!-- New wrapper -->
+<div class="card-wrapper-container">
+    <div class="card-wrapper">
+      <article class="card">
+        <div class="card-title">Card Title 1</div>
+        One two three
+        </article>
+        <article class="card">
+            <div class="card-title">Card Title 2</div>
+            One two three
+            </article>
+            <article class="card">
+                <div class="card-title">Card Title 3</div>
+                One two three
+                </article>
+    </div>
+  </div>
+  
+  
+  
+</body>
+</html>
