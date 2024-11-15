@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<title>CSS simple cont query</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.container {
+  container-type: inline-size;
+}
+
+.test {
+  width: 250px;
+  height: 250px;
+  /* font-size: 1rem; */
+  background-color: hotpink;
+  padding: 50px
+}
+
+@container (max-width: 768px) {
+  .test {
+    background-color: red;
+    font-size: 2rem;
+  }
+}
+</style>
+<body>
+    <div class="container">
+        <div class="test">This is the test</div>
+      </div>
+</body>
+</html>
