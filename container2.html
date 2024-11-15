@@ -2,54 +2,69 @@
 <html>
 <title>Containers</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-
+<head>
+  <link rel="stylesheet" href="index2.css">
+</head>
 <style>
-
-/* Create the container / set the containment context */
-.card-wrapper-container {
-  container-type: inline-size;
-}
-
-/* Define the container query using @container */
-/* The rule below says: find the closest ancestor with a
- containment context 
-- in this case "card-wrapper-container" -
-and when the width is 560 pixels and above, 
-set the grid columns to 2 */
-@container (min-width: 560px) {
-  .card-wrapper {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .card-title {
-    font-size: 1.5rem;
-  }
-}
-
+ 
 </style>
 
 <body>
-
-
-<!-- New wrapper -->
-<div class="card-wrapper-container">
-    <div class="card-wrapper">
-      <article class="card">
+ 
+  <div class="card-wrapper-container"> <!-- grandParent -->
+    <div class="card-wrapper">  <!-- parent -->
+      <article class="card">  <!-- child -->
         <div class="card-title">Card Title 1</div>
         One two three
-        </article>
-        <article class="card">
-            <div class="card-title">Card Title 2</div>
-            One two three
-            </article>
-            <article class="card">
-                <div class="card-title">Card Title 3</div>
-                One two three
-                </article>
-    </div>
-  </div>
-  
-  
-  
+      </article>
+      <article class="card">
+        <div class="card-title">Card Title 2</div>
+        One two three
+      </article>
+      <article class="card">
+        <div class="card-title">Card Title 3</div>
+        One two three
+      </article>
+      <article class="card">
+        <div class="card-title">Card Title 4</div>
+        One two three
+      </article>
+      <article class="card">
+        <div class="card-title">Card Title 5</div>
+        One two three
+      </article>
+      <article class="card">
+        <div class="card-title">Card Title 6</div>
+        One two three
+      </article>
+    </div> <!--end of card-wrapper-->
+    <div class="card-wrapper" style="width:50%">
+      <article class="card">
+        <div class="card-title">Card Title 7</div>
+        One two three
+      </article>
+      <article class="card">
+        <div class="card-title">Card Title 8</div>
+        One two three
+      </article>
+      <article class="card">
+        <div class="card-title">Card Title 9</div>
+        One two three
+      </article>
+      <article class="card">
+        <div class="card-title">Card Title 10</div>
+        One two three four five six seven eight nine ten
+        One two three four five six seven eight nine ten
+      </article>
+      <article class="card">
+        <div class="card-title">Card Title 11</div>
+        One two three
+      </article>
+      <article class="card">
+        <div class="card-title">Card Title 12</div>
+        One two three
+      </article>
+    </div> <!--end of card-wrapper-->
+  </div> <!--end of card-wrapper-container-->
 </body>
 </html>
