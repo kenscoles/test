@@ -1,0 +1,67 @@
+[{
+        "name": "Alberta",
+        "code": "AB ",
+        "capital": "Edmonton ",
+        "city": "Calgary"
+    }, {
+        "name": "British Columbia ",
+        "code": "BC ",
+        "capital": "Victoria ",
+        "city": "Vancouver"
+    }, {
+        "name": "Manitoba ",
+        "code": "MB ",
+        "capital": "Winnipeg ",
+        "city": "Winnipeg "
+    }, {
+        "name": "New Brunswick ",
+        "code": "NB ",
+        "capital": "Fredericton ",
+        "city": "Moncton"
+    }, {
+        "name": "Newfoundland and Labrador ",
+        "code": "NL ",
+        "capital": "St. John's ",
+        "city": "St. John's "
+    }, {
+        "name": "Nova Scotia ",
+        "code": "NS ",
+        "capital": "Halifax ",
+        "city": "Halifax "
+    }, {
+        "name": "Ontario ",
+        "code": "ON ",
+        "capital": "Toronto ",
+        "city": "Toronto "
+    }, {
+        "name": "Prince Edward Island ",
+        "code": "PE ",
+        "capital": "Charlottetown ",
+        "city": "Charlottetown "
+    }, {
+        "name": "Quebec ",
+        "code": "QC ",
+        "capital": "Quebec City ",
+        "city": "Montreal"
+    }, {
+        "name": "Saskatchewan ",
+        "code": "SK ",
+        "capital": "Regina ",
+        "city": "Saskatoon"
+    }, {
+        "name": "Yukon Territory",
+        "code": "YT ",
+        "capital": "Whitehorse ",
+        "city": "Whitehorse "
+    }, {
+        "name": "Nunavut Territory",
+        "code": "NU ",
+        "capital": "Iqaluit ",
+        "city": "Iqaluit "
+    }, {
+        "name": "Northwest Territories ",
+        "code": "NT ",
+        "capital": "Yellowknife ",
+        "city": "Yellowknife "
+    }
+]
